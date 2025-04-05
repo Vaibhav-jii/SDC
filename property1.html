@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: white;
+            text-decoration: underline;
+        }
+
+        #mid {
+            width: 49%;
+            float: left;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 1%;
+            text-align: left;
+            margin-bottom: 20px;
+            height: 600px;
+            margin-right: 2%;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        #start {
+            width: 48%;
+            float: left;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 1%;
+            text-align: left;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            height: 600px;
+            background-color: white;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+
+        #Details {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: white;
+            box-sizing: border-box;
+            padding: 4%;
+        }
+
+        #Entrence,
+        #Bathroom,
+        #View,
+        #Elevator,
+        #Interior {
+            border: 1px solid black;
+            padding: 1%;
+            box-sizing: border-box;
+            height: 430px;
+            margin-bottom: 20px;
+            clear: both;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        #Entrence_img,
+        #Bathi,
+        #Vi,
+        #ei,
+        #ii {
+            width: 60%;
+            float: left;
+        }
+
+        #E_text,
+        #Batht,
+        #vt,
+        #et,
+        #it {
+            width: 34%;
+            float: left;
+            font-size: 400%;
+            height: 400px;
+            text-align: center;
+            background-color: white;
+        }
+
+        #Bedroom,
+        #Lobby,
+        #Kitchen,
+        #Dining,
+        #Office {
+            box-sizing: border-box;
+            height: 430px;
+            margin-bottom: 20px;
+        }
+
+        .bi1,
+        .li1,
+        .ki1,
+        .di1,
+        .oi1 {
+            width: 49%;
+            float: left;
+            margin-right: 1%;
+            border-radius: 10px;
+        }
+
+        .bi2,
+        .li2,
+        .ki2,
+        .di2,
+        .oi2 {
+            width: 49%;
+            float: left;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            #mid {
+                width: 100%;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 1%;
+                text-align: left;
+                margin-bottom: 20px;
+                height: 600px;
+                margin-right: 2%;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            #start {
+                width: 100%;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 1%;
+                text-align: left;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                height: 600px;
+                background-color: white;
+            }
+
+            #Entrence,
+            #Bathroom,
+            #View,
+            #Elevator,
+            #Interior {
+                border: 1px solid black;
+                padding: 1%;
+                box-sizing: border-box;
+                height: 210px;
+                margin-bottom: 20px;
+                clear: both;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #Entrence_img,
+            #Bathi,
+            #Vi,
+            #ei,
+            #ii {
+                width: 60%;
+                float: left;
+                height: 200px;
+            }
+
+            #E_text,
+            #Batht,
+            #vt,
+            #et,
+            #it {
+                width: 34%;
+                float: left;
+                font-size: x-large;
+                height: 200px;
+                text-align: center;
+                background-color: white;
+            }
+
+            .mob {
+                clear: both;
+                height: 200px;
+            }
+
+            #Bedroom,
+            #Lobby,
+            #Kitchen,
+            #Dining,
+            #Office {
+                box-sizing: border-box;
+                height: 210px;
+                margin-bottom: 20px;
+            }
+
+            .bi1,
+            .li1,
+            .ki1,
+            .di1,
+            .oi1 {
+                width: 49%;
+                float: left;
+                margin-right: 1%;
+                border-radius: 10px;
+                height: 200px;
+            }
+
+            .bi2,
+            .li2,
+            .ki2,
+            .di2,
+            .oi2 {
+                width: 49%;
+                float: left;
+                border-radius: 10px;
+                height: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 1900px) {
+
+            h1,
+            h2 {
+                text-align: center;
+                color: white;
+                font-size: 800%;
+                text-decoration: underline;
+            }
+
+            #mid {
+                width: 49%;
+                float: left;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 1%;
+                text-align: left;
+                margin-bottom: 20px;
+                height: 1600px;
+                margin-right: 2%;
+                border-radius: 50px;
+                background-color: white;
+                font-size: 400%;
+            }
+
+            #start {
+                width: 49%;
+                float: left;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 1%;
+                text-align: left;
+                margin-bottom: 20px;
+                border-radius: 50px;
+                height: 1600px;
+                background-color: white;
+                font-size: 400%;
+            }
+
+            img {
+                width: 100%;
+                height: 900px;
+                margin-bottom: 20px;
+                border: 1px solid black;
+            }
+
+            #Details {
+                margin-bottom: 20px;
+                border-radius: 50px;
+                border: 1px solid white;
+                background-color: white;
+                box-sizing: border-box;
+                padding: 4%;
+                font-size: 500%;
+            }
+
+            #Entrence,
+            #Bathroom,
+            #View,
+            #Elevator,
+            #Interior {
+                border: 1px solid black;
+                padding: 1%;
+                box-sizing: border-box;
+                height: 1100px;
+                margin-bottom: 20px;
+                clear: both;
+                background-color: white;
+                border-radius: 50px;
+            }
+
+            #Entrence_img,
+            #Bathi,
+            #Vi,
+            #ei,
+            #ii {
+                width: 60%;
+                float: left;
+            }
+
+            #E_text,
+            #Batht,
+            #vt,
+            #et,
+            #it {
+                width: 35%;
+                float: left;
+                font-size: 700%;
+                height: 400px;
+                text-align: center;
+                background-color: white;
+            }
+
+            #Bedroom,
+            #Lobby,
+            #Kitchen,
+            #Dining,
+            #Office {
+                box-sizing: border-box;
+                height: 430px;
+                margin-bottom: 20px;
+            }
+
+            .bi1,
+            .li1,
+            .ki1,
+            .di1,
+            .oi1 {
+                width: 49%;
+                float: left;
+                margin-right: 1%;
+                border-radius: 10px;
+            }
+
+            .bi2,
+            .li2,
+            .ki2,
+            .di2,
+            .oi2 {
+                width: 49%;
+                float: left;
+                border-radius: 10px;
+            }
+
+            .mob {
+                clear: both;
+                height: 1000px;
+            }
+
+            @media only screen and (min-width: 5000px) {
+
+                h1,
+                h2 {
+                    text-align: center;
+                    color: white;
+                    font-size: 1000%;
+                    text-decoration: underline;
+                }
+
+                #mid {
+                    width: 49%;
+                    float: left;
+                    border: 1px solid black;
+                    box-sizing: border-box;
+                    padding: 1%;
+                    text-align: left;
+                    margin-bottom: 20px;
+                    height: 3200px;
+                    margin-right: 2%;
+                    border-radius: 50px;
+                    background-color: white;
+                    font-size: 800%;
+                }
+
+                #start {
+                    width: 49%;
+                    float: left;
+                    border: 1px solid black;
+                    box-sizing: border-box;
+                    padding: 1%;
+                    text-align: left;
+                    margin-bottom: 20px;
+                    border-radius: 50px;
+                    height: 3200px;
+                    background-color: white;
+                    font-size: 800%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 2000px;
+                    margin-bottom: 20px;
+                    border: 1px solid black;
+                }
+
+                #Details {
+                    margin-bottom: 20px;
+                    border-radius: 50px;
+                    border: 1px solid white;
+                    background-color: white;
+                    box-sizing: border-box;
+                    padding: 4%;
+                    font-size: 800%;
+                }
+
+                .mob {
+                    clear: both;
+                    height: 2000px;
+                }
+
+                #Entrence,
+                #Bathroom,
+                #View,
+                #Elevator,
+                #Interior {
+                    border: 1px solid black;
+                    padding: 1%;
+                    box-sizing: border-box;
+                    height: 2200px;
+                    margin-bottom: 20px;
+                    clear: both;
+                    background-color: white;
+                    border-radius: 50px;
+                }
+
+                #Entrence_img,
+                #Bathi,
+                #Vi,
+                #ei,
+                #ii {
+                    width: 60%;
+                    float: left;
+                }
+
+                #E_text,
+                #Batht,
+                #vt,
+                #et,
+                #it {
+                    width: 35%;
+                    float: left;
+                    font-size: 2000%;
+                    height: 400px;
+                    text-align: center;
+                    background-color: white;
+                }
+
+                #Bedroom,
+                #Lobby,
+                #Kitchen,
+                #Dining,
+                #Office {
+                    box-sizing: border-box;
+                    height: 430px;
+                    margin-bottom: 20px;
+                }
+
+                .bi1,
+                .li1,
+                .ki1,
+                .di1,
+                .oi1 {
+                    width: 47%;
+                    float: left;
+                    margin-right: 1%;
+                    border-radius: 10px;
+                    margin-left: 1%;
+                }
+
+                .bi2,
+                .li2,
+                .ki2,
+                .di2,
+                .oi2 {
+                    width: 49%;
+                    float: left;
+                    border-radius: 10px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <U>
+        <h1>Vaibhav's Real Estate</h1>
+    </U>
+    <div id="mid">
+        <img src="photos/Building Exterior.png" alt="Building exterior"></br>
+        <li>Condominium, single family residence</br>
+        <li>Built in 1955</br>
+        <li>Steam</br>
+        <li>Central air</br>
+        <li>2 Attached garage spaces</br>
+        <li>$1,189 monthly HOA fee</br>
+        <li>$220 price/sqft</br>
+    </div>
+    <div id="start">
+        <img src="photos/exterior.png" alt="Exterior"></br>
+        <li><b>Location:</b>3440 N Lake Shore Dr APT 11D, Chicago, IL 60657</br></br>
+        <li><b>Price:</b>$269,000 </br></br>
+        <li><b>Details:</b>bd2 ba1,220 sqft</br>
+    </div>
+    <h1><u>Details</u></h1>
+    <div id="Details">
+        <li>Beautiful light filled 2 bed 2 bath corner condo right on <b>Lake Michigan</b> with unobstructed views of
+            Belmont harbor.
+
+        <li>Optimal layout with open kitchen, and updated baths.
+
+        <li>Price includes <b>storage locker 68</b> located on the second floor.
+
+        <li>On-site valet parking is available for <b>$195.00 per month.</b>
+
+        <li>Weekly carwashes available for <b>$30 per month. </b>
+
+        <li>Near CTA, shops, restaurants, Belmont Yacht Club, jogging, bike paths and all the Lakeview neighborhood has
+            to offer.
+
+        <li>Sorry no pets.
+
+    </div>
+    <div id="Elevator">
+        <div id="ei">
+            <img src="photos/elevator.png" class="mob">
+        </div>
+        <div id="et">Elevator</div>
+    </div>
+    <div id="Entrence">
+        <div id="Entrence_img">
+            <img src="photos/entrance.png" class="mob">
+        </div>
+        <div id="E_text">Entrence</div>
+    </div>
+    <div id="Interior">
+        <div id="ii"><img src="photos/interior.png" class="mob" alt=""></div>
+        <div id="it">Interior</div>
+    </div>
+    <div id="Bathroom">
+        <div id="Bathi">
+            <img src="photos/bathroom 02.png" class="mob">
+        </div>
+        <div id="Batht">Bathroom</div>
+    </div>
+    <div id="View">
+        <div id="Vi">
+            <img src="photos/view-marina.png" class="mob">
+        </div>
+        <div id="vt">View</div>
+    </div>
+    <h1><u>Lobby</u></h1>
+    <div id="lobby">
+        <div class="Lob">
+            <img src="photos/lobby.png" class="li1">
+        </div>
+        <div class="Lob">
+            <img src="photos/lobby-03.png" class="li2">
+        </div>
+    </div>
+
+
+    <h1><u>Kitchen</u></h1>
+    <div id="Kitchen">
+        <div>
+            <img src="photos/kitchen 02.png" class="ki1">
+        </div>
+        <div>
+            <img src="photos/kitchen 03.png" class="ki2">
+        </div>
+    </div>
+    <h1><u>Dinning</u></h1>
+    <div id="Dinning">
+        <div>
+            <img src="photos/dining.png" class="di1">
+        </div>
+        <div>
+            <img src="photos/dining 02.png" class="di2">
+        </div>
+    </div>
+    <h1><u>Bedroom</u></h1>
+    <div id="Bedroom">
+        <div class="Bed">
+            <img src="photos/bedroom.png" class="bi1">
+        </div>
+
+        <div class="Bed">
+            <img src="photos/bedroom 02.png" class="bi2">
+        </div>
+    </div>
+    <h1><u>Office</u></h1>
+    <div id="Office">
+        <div>
+            <img src="photos/office.png" class="oi1">
+        </div>
+        <div>
+            <img src="photos/office-02.png" class="oi2">
+        </div>
+    </div>
+    <div><a href="home.html">Click here to go back to home page</a></div>
+</body>
+
+</html>
